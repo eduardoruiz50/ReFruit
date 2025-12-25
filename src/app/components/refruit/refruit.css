@@ -1,0 +1,85 @@
+.refruit {
+    padding: 8rem 0 4rem;
+    /* Top padding accounts for fixed header if needed, but header is sticky */
+    background: radial-gradient(circle at top right, var(--color-accent) 0%, transparent 40%);
+}
+
+.refruit-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #E6F4EA;
+    color: var(--color-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.refruit-title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-secondary);
+}
+
+.refruit-description {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-lg);
+    max-width: 500px;
+}
+
+.refruit-actions {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.refruit-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .refruit-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .refruit-actions {
+        justify-content: center;
+    }
+
+    .refruit-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

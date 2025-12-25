@@ -1,0 +1,19 @@
+<section class="refruit">
+    <div class="container refruit-container">
+        <div class="refruit-content">
+            <span class="badge">{{ t.translations().refruit.badge }}</span>
+            <h1 class="refruit-title" [innerHTML]="t.translations().refruit.title"></h1>
+            <p class="refruit-description">
+                {{ t.translations().refruit.description }}
+            </p>
+            <div class="refruit-actions">
+                <button class="btn btn-primary">{{ t.translations().refruit.btnPrimary }}</button>
+                <button class="btn btn-outline">{{ t.translations().refruit.btnOutline }}</button>
+            </div>
+        </div>
+        <div class="refruit-image">
+            <!-- Placeholder for product image -->
+            <img [src]="t.translations().refruit.imgSrc" [alt]="t.translations().refruit.imgAlt" class="refruit-img">
+        </div>
+    </div>
+</section>

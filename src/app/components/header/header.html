@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="container header-container">
+    <a href="#" class="logo">{{ t.translations().brand }}</a>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#features" class="nav-link">{{ t.translations().nav.benefits }}</a></li>
+        <li><a href="#about" class="nav-link">{{ t.translations().nav.mission }}</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button (click)="t.toggleLanguage()" class="lang-toggle">
+        {{ t.currentLanguage() === 'en' ? 'ES' : 'EN' }}
+      </button>
+      <a href="#shop" class="btn btn-primary">{{ t.translations().nav.shop }}</a>
+    </div>
+  </div>
+</header>
